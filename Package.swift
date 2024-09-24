@@ -19,7 +19,6 @@ let package = Package(
         .target(
             name: "JRSwizzle",
             path: ".",
-            publicHeadersPath: ".",
             exclude: [
                 "LICENSE.txt",
                 "README.md",
@@ -27,6 +26,7 @@ let package = Package(
                 "Podfile.lock",
                 "JRSwizzle.podspec"
             ],
+            publicHeadersPath: ".",
             cSettings: [
                 .unsafeFlags(["-fno-objc-arc"])
             ]
