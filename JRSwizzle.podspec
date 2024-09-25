@@ -14,7 +14,7 @@ JRSwizzle is source code package that offers a single, easy, correct+consistent 
 More succinctly: JRSwizzle wants to be your one-stop-shop for all your method swizzling needs.
   }
 
-  s.source_files = '*.{h,m}'
+  s.source_files = 'Source/*.{h,m}'
 
   s.ios.deployment_target = '4.3'
   s.osx.deployment_target = '10.6'
