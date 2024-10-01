@@ -19,8 +19,9 @@ let package = Package(
         .target(
             name: "JRSwizzle",
             path: "Source",
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cSettings: [
+		.headerSearchPath("include/JRSwizzle"),
                 .unsafeFlags(["-fno-objc-arc"])
             ]
         )
